@@ -41,9 +41,9 @@ public class TestCase3_AddWiFiNetwork {
 
     public void execute() {
         try {
-            System.out.println("\n===== Test Case 3: Add WiFi Network (WEP / Hidden) =====");
+            System.out.println("\nAdd WiFi Network (WEP / Hidden)");
 
-            System.out.println("Step 1: Opening Network & internet > Wi-Fi...");
+            System.out.println("\nOpening Network & internet > Wi-Fi");
 
             screen.type("r", KeyModifier.WIN);
 
@@ -53,11 +53,11 @@ public class TestCase3_AddWiFiNetwork {
 
             screen.type(Key.ENTER);
 
-            System.out.println(" - Waiting 10 seconds for Settings app...");
+            System.out.println("\nWaiting 10 seconds for Settings app");
 
             Thread.sleep(10000);
 
-            System.out.println("Step 2: Navigating inside Wi-Fi menu...");
+            System.out.println("\nNavigating inside Wi-Fi menu");
 
             screen.type(Key.TAB); Thread.sleep(500);
 
@@ -67,15 +67,15 @@ public class TestCase3_AddWiFiNetwork {
 
             screen.type(Key.TAB); Thread.sleep(500);
 
-            System.out.println(" - Pressing Enter to go inside 'Manage known networks'");
+            System.out.println("\nPressing Enter to go inside 'Manage known networks'");
 
             screen.type(Key.ENTER);
 
-            System.out.println(" - Waiting 8 seconds...");
+            System.out.println("\nWaiting 8 seconds");
 
             Thread.sleep(4000);
 
-            System.out.println("Step 3: Clicking 'Add network'...");
+            System.out.println("\nClicking 'Add network'");
 
             screen.type(Key.TAB);screen.type(Key.TAB);screen.type(Key.TAB);
 
@@ -83,17 +83,17 @@ public class TestCase3_AddWiFiNetwork {
 
             screen.type(Key.ENTER);
 
-            System.out.println(" - Waiting 8 seconds for Dialog...");
+            System.out.println("\nWaiting 8 seconds for Dialog");
 
             Thread.sleep(8000);
 
-            System.out.println("Step 4: Typing SSID...");
+            System.out.println("\nTyping SSID");
 
             screen.type(ssid);
 
             Thread.sleep(1500);
 
-            System.out.println("Step 5: Selecting WEP...");
+            System.out.println("\nSelecting WEP");
 
             screen.type(Key.TAB);
 
@@ -105,7 +105,7 @@ public class TestCase3_AddWiFiNetwork {
 
             Thread.sleep(1000);
 
-            System.out.println("Step 6: Typing Password...");
+            System.out.println("\nTyping Password");
 
             screen.type(Key.TAB);
 
@@ -115,7 +115,7 @@ public class TestCase3_AddWiFiNetwork {
 
             Thread.sleep(1500);
 
-            System.out.println("Step 7: Checking Hidden Network box...");
+            System.out.println("\nChecking Hidden Network box");
 
             screen.type(Key.TAB);
 
@@ -129,7 +129,7 @@ public class TestCase3_AddWiFiNetwork {
 
             Thread.sleep(1000);
 
-            System.out.println("Step 8: Saving...");
+            System.out.println("\nSaving");
 
             Thread.sleep(500);
 
@@ -139,7 +139,7 @@ public class TestCase3_AddWiFiNetwork {
 
             screen.type(Key.ENTER);
 
-            System.out.println("\nNetwork Added. App left open.");
+            System.out.println("\nNetwork Added.");
 
         } catch (Exception e) {
 
